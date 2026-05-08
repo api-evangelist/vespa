@@ -1,0 +1,29 @@
+aid: vespa
+url: https://raw.githubusercontent.com/api-evangelist/vespa/refs/heads/main/apis.yml
+name: Vespa
+x-type: company
+description: >-
+  Vespa is an open-source serving engine for big-data, vector search, and recommendations. Developed at Yahoo, now an independent company; runs production search at scale.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Vector Database
+  - Search
+  - Open Source
+  - Real-Time
+  - Serving
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://vespa.ai/
+  - type: Plans
+    url: plans/vespa-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/vespa-rate-limits.yml
+  - type: FinOps
+    url: finops/vespa-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
