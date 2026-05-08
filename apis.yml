@@ -1,23 +1,67 @@
 aid: vespa
 url: https://raw.githubusercontent.com/api-evangelist/vespa/refs/heads/main/apis.yml
 name: Vespa
-x-type: company
+x-type: opensource
 description: >-
-  Vespa is an open-source serving engine for big-data, vector search, and recommendations. Developed at Yahoo, now an independent company; runs production search at scale.
+  Vespa is an Apache 2.0 open-source serving engine for big-data, vector search, and
+  recommendations. It exposes a Document API (write/read), a Search API (query), and
+  several admin endpoints. Vespa Cloud is the commercial managed offering.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Vector Database
   - Search
   - Open Source
   - Real-Time
-  - Serving
+  - Recommendations
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: vespa:vespa-document-api-v1
+    name: Vespa Document API v1
+    humanURL: https://docs.vespa.ai/en/document-v1-api-guide.html
+    baseURL: http://{vespa_endpoint}/document/v1
+    tags:
+      - REST
+      - Documents
+      - CRUD
+      - Visit
+    description: >-
+      The /document/v1 API supports GET, POST, PUT, and DELETE for documents, plus bulk
+      visiting/iteration with continuation tokens, conditional writes (test-and-set
+      using the document selector language), and upserts. Backpressure is signaled
+      with 429 Too Many Requests.
+    properties:
+      - type: Documentation
+        url: https://docs.vespa.ai/en/document-v1-api-guide.html
+  - aid: vespa:vespa-search-api
+    name: Vespa Search API
+    humanURL: https://docs.vespa.ai/en/query-api.html
+    baseURL: http://{vespa_endpoint}/search/
+    tags:
+      - REST
+      - Search
+      - Query
+      - YQL
+    description: >-
+      The Vespa Search API accepts queries via YQL or structured query JSON over HTTP
+      GET/POST. It powers full-text, vector, and hybrid retrieval with ranking
+      expressions defined in the application package.
+    properties:
+      - type: Documentation
+        url: https://docs.vespa.ai/en/query-api.html
 common:
   - type: Website
     url: https://vespa.ai/
+  - type: Portal
+    url: https://docs.vespa.ai/
+  - type: SourceCode
+    url: https://github.com/vespa-engine/vespa
+  - type: CommercialOffering
+    title: Vespa Cloud
+    url: https://cloud.vespa.ai/
+  - type: Pricing
+    url: https://cloud.vespa.ai/price-calculator.html
   - type: Plans
     url: plans/vespa-plans-pricing.yml
   - type: RateLimits
