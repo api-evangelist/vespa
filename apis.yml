@@ -1,7 +1,7 @@
 aid: vespa
 url: https://raw.githubusercontent.com/api-evangelist/vespa/refs/heads/main/apis.yml
 name: Vespa
-x-type: opensource
+kind: opensource
 description: >-
   Vespa is an Apache 2.0 open-source serving engine for big-data, vector search, and
   recommendations. It exposes a Document API (write/read), a Search API (query), and
