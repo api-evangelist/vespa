@@ -51,6 +51,8 @@ apis:
       - type: Documentation
         url: https://docs.vespa.ai/en/query-api.html
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/vespa-ai
   - type: Website
     url: https://vespa.ai/
   - type: Portal
