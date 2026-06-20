@@ -6,7 +6,7 @@ description: >-
   Vespa is an Apache 2.0 open-source serving engine for big-data, vector search, and
   recommendations. It exposes a Document API (write/read), a Search API (query), and
   several admin endpoints. Vespa Cloud is the commercial managed offering.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Vector Database
   - Search
