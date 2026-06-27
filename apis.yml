@@ -70,7 +70,7 @@ common:
     url: rate-limits/vespa-rate-limits.yml
   - type: FinOps
     url: finops/vespa-finops.yml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.vespa.ai/llms.txt
 maintainers:
   - FN: Kin Lane
